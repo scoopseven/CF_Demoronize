@@ -17,6 +17,7 @@ function DeMoronize (text) {
 
   	// map incompatible non-ISO characters into plausible substitutes
 	
+	// added by Mark
 	text = Replace(text, Chr(96), "'", "All");
 	text = Replace(text, Chr(198), "'", "All");
 	text = Replace(text, Chr(8216), "'", "All");
@@ -43,7 +44,6 @@ function DeMoronize (text) {
 	text = Replace(text, Chr(139), ")", "All");
 	text = Replace(text, Chr(140), "Oe", "All");
 
-	// text = Replace(text, Chr(145), "`", "All");
 	text = Replace(text, Chr(145), "'", "All");
 	text = Replace(text, Chr(146), "'", "All");
 	text = Replace(text, Chr(147), """", "All");
